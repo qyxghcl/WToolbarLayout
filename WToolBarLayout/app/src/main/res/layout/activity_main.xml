@@ -5,30 +5,5 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.a50647.wtoolbarhelper.ToolBarLayout
-        android:id="@+id/common_toolbar_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:isHalfTrans="false">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/common_toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:contentInsetLeft="0dp"
-            app:contentInsetStart="0dp"
-            app:contentInsetStartWithNavigation="0dp">
-
-            <TextView
-                android:id="@+id/common_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:ellipsize="end"
-                android:gravity="center"
-                android:maxLines="1"
-                android:textSize="20sp"
-                />
-        </android.support.v7.widget.Toolbar>
-    </com.a50647.wtoolbarhelper.ToolBarLayout>
+    <include layout="@layout/common_default_toolbar"/>
 </LinearLayout>
